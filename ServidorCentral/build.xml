@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="servidor">
+    <!--INSTALAR ANT 1.7-->
+	
+    <!--defino propiedades de carpeta-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+	
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/servidor.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="interfaces.turismoUy"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ org.junit.jupiter.api_5.8.1.v20211018-1956.jar org.junit.jupiter.engine_5.8.1.v20211018-1956.jar org.junit.jupiter.migrationsupport_5.8.1.v20211018-1956.jar org.junit.jupiter.params_5.8.1.v20211018-1956.jar org.junit.platform.commons_1.8.1.v20211018-1956.jar org.junit.platform.engine_1.8.1.v20211018-1956.jar org.junit.platform.launcher_1.8.1.v20211018-1956.jar org.junit.platform.runner_1.8.1.v20211018-1956.jar org.junit.platform.suite.api_1.8.1.v20211018-1956.jar org.junit.platform.suite.engine_1.8.1.v20211028-1957.jar org.junit.platform.suite.commons_1.8.1.v20211018-1956.jar org.junit.vintage.engine_5.8.1.v20211018-1956.jar org.opentest4j_1.2.0.v20211018-1956.jar org.apiguardian_1.1.2.v20211018-1956.jar org.junit_4.13.2.v20211018-1956.jar org.hamcrest.core_1.3.0.v20180420-1519.jar jaxws-eclipselink-plugin.jar org.eclipse.persistence.asm.jar org.eclipse.persistence.core.jar org.eclipse.persistence.moxy.jar org.eclipse.persistence.sdo.jar sdo-eclipselink-plugin.jar angus-activation.jar angus-mail.jar FastInfoset.jar gmbal-api-only.jar ha-api.jar jakarta.activation-api.jar jakarta.annotation-api.jar jakarta.mail-api.jar jakarta.xml.bind-api.jar jakarta.xml.soap-api.jar jakarta.xml.ws-api.jar jaxb-core.jar jaxb-impl.jar jaxb-xjc.jar jaxb-jxc.jar management-api.jar mimepull.jar saaj-impl.jar stax-ex.jar stax2-api.jar streambuffer.jar woodstox-core.jar jaxws-rt.jar jaxws-tools.jar jcalendar-1.4.jar jgoodies-common-1.2.0.jar jgoodies-looks-2.4.1.jar junit-4.6.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="${dir.jarfile}/bin"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib/plugins" includes="jaxws-eclipselink-plugin.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib/plugins" includes="org.eclipse.persistence.asm.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib/plugins" includes="org.eclipse.persistence.core.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib/plugins" includes="org.eclipse.persistence.moxy.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib/plugins" includes="org.eclipse.persistence.sdo.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib/plugins" includes="sdo-eclipselink-plugin.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="angus-activation.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="angus-mail.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="FastInfoset.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="gmbal-api-only.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="ha-api.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jakarta.activation-api.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jakarta.annotation-api.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jakarta.mail-api.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jakarta.xml.bind-api.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jakarta.xml.soap-api.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jakarta.xml.ws-api.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jaxb-core.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jaxb-impl.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jaxb-xjc.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jaxb-jxc.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="management-api.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="mimepull.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="saaj-impl.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="stax-ex.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="stax2-api.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="streambuffer.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="woodstox-core.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jaxws-rt.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/jaxws-ri/lib" includes="jaxws-tools.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/JCalendar/lib" includes="jcalendar-1.4.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/JCalendar/lib" includes="jgoodies-common-1.2.0.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/JCalendar/lib" includes="jgoodies-looks-2.4.1.jar"/>
+            <zipfileset dir="${dir.jarfile}/lib/JCalendar/lib" includes="junit-4.6.jar"/>
+        </jar>
+    </target>
+</project>

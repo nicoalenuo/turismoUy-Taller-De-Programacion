@@ -1,0 +1,275 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>turismoUy</title>
+
+  <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+
+  <script src="resources/js/font-awesome.js"></script>
+
+
+  <link rel="stylesheet" href="resources/css/menuIzq.css">
+  <link rel="stylesheet" href="resources/css/imgChooser.css">
+  <link rel="stylesheet" href="resources/css/bootstrap-datepicker.css">
+
+</head>
+
+<body>
+
+  <nav id="header" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <button class="btn px-1 py-0 open-btn"> <i class="fa fa-bars"></i></button>
+    <a class="navbar-brand ml-5" href="index.html">
+      <span class="" style="font-size: 25px; color: rgb(136, 31, 48);"><i class="fa fa-plane"></i></span>
+      turismo.<b>Uy</b>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-user-o"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-auto">
+        <form class="form-inline my-4 my-lg-0 ml-auto mr-auto text">
+            <input class="form-control mr-sm-2 mr-2" type="search" id="searchBar" placeholder="Buscar actividades, usuarios, etc" aria-label="Search" style="width: 25rem">
+            <a class="nav-link" href="#">
+                <span class="" style="color: rgb(136, 31, 48);"><i class="fa fa-search"></i></span>
+            </a>
+        </form>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown mr-auto ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Herramientas
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="listadoUsuarios.html">Consultar usuarios</a>
+              <a class="dropdown-item" href="listadoPaquetes.html">Consultar paquetes de actividades</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="altaActividad.html">Alta de actividad turística</a>
+              <a class="dropdown-item" href="altaSalida.html">Alta de salida turística</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown mr-auto ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="resources/img/washington.jpeg" class="card-img" style="max-height: 40px; max-width: 40px;">
+            Washington Rocha
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="consultaUsuarioProv.html">Mi perfil</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="inicioSesion.html">Cerrar sesión</a>
+          </div>
+        </li>   
+      </ul>
+      
+    </div>
+  </nav>
+
+  <div style="height: 65px;"></div>
+  <div class="container-fluid"  style="min-height: 1000px;">
+    <div class="row">
+      <div class="sidebar border-right h-100 overflow-auto" id="side_nav"> 
+        <h5 class="ml-3"><i class="fa fa-paper-plane-o mr-2 mt-3" style="color: rgb(220, 53, 69)"></i>Categorias</h5>
+        <ul class="list-unstyled pl-5 pt-3">
+            <li class=""><a href="listadoActividadesCategoria.html" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Gastronomía</a></li>
+        </ul>
+        <hr class="h-color mx-2">
+        
+        <h5 class="ml-3"><i class="fa fa-map-o mr-2" style="color: rgb(220, 53, 69)"></i>Departamentos</h5>
+        <ul class="list-unstyled  pl-5 pt-3 pb-4">
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Artigas</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Salto</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Canelones</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Maldonado</a></li>
+            <li class=""><a href="listadoActividadesDepartamento.html" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Rocha</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Treinta y Tres</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Cerro Largo</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Rivera</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Paysandú</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Río Negro</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Soriano</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Colonia</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">San José</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Salto</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Flores</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Florida</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Lavalleja</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Durazno</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Tacuarembó</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Montevideo</a></li>
+            <div style="height: 30px;"></div>
+        </ul>
+      </div>
+
+      <div class="col py-4">
+
+        <div class="row border-bottom mb-3" style="max-width: 80rem">
+          <div class="col">
+              <h2>Perfil</h2>
+          </div>
+        </div>
+        <div class="row mx-3 flex-column flex-md-row">
+            <img src="resources/img/washington.jpeg" class="card-img mr-3 mb-3" style="max-height: 300px; max-width: 400px;">
+            <div class="col">
+                <h3>Washington Rocha</h3>
+                <label>washington /<span> washington@turismorocha.gub.uy</span></label>
+            </div>
+            
+        </div>
+        
+        <div class="card text-center ml-3 mt-3" style="max-width: 800px;">
+            <div class="card-header">
+              <nav class="nav nav-pills card-header-pills flex-column flex-md-row">
+                    <a class="nav-link active" id="linkD" href="#perfil" data-toggle="tab">Perfil</a>
+                    <a class="nav-link" id="linkD" href="#actividades" data-toggle="tab">Actividades provistas</a>
+                    <a class="nav-link" id="linkD" href="#editar" data-toggle="tab">Editar datos</a>
+              </nav>
+            </div>
+            <div class="tab-content py-4">
+                <div class="tab-pane align-left active" id="perfil">
+                    <h5 class="card-title">Nickname</h5>
+                    <label>washington</label>
+                    <h5 class="card-title">Nombre</h5>
+                    <label>Washington</label>
+                    <h5 class="card-title">Apellido</h5>
+                    <label>Rocha</label>
+                    <h5 class="card-title">Email</h5>
+                    <label>washington@turismorocha.gub.uy</label>
+                    <h5 class="card-title">Fecha de nacimiento</h5>
+                    <label>14/09/1970</label>
+                    <h5 class="card-title">Descripción</h5>
+                    <label>Hola! me llamo Washington y soy el encargado del portal de turismo del departamento de Rocha - Uruguay</label>
+                    <h5 class="card-title">Sitio web</h5>
+                    <label>http://turismorocha.gub.uy/</label>
+                </div>
+                
+                <div class="tab-pane" id="actividades">
+                  <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Actividad</th>
+                            <th>Duracion</th>
+                            <th>Costo</th>
+                            <th>Ciudad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="#" style="color:rgb(220, 53, 69)">Degusta</a></td>
+                        <td>3</td>
+                        <td>800</td>
+                        <td>Rocha</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#"style="color:rgb(220, 53, 69)">Teatro con Sabores</a></td>
+                        <td>3</td>
+                        <td>500</td>
+                        <td>Rocha</td>
+                      </tr>
+                    </tbody>
+                  </table>    
+                </div>
+                <div class="tab-pane" id="editar">
+                  <div class="col-lg-8 col-sm-12 py-4 mx-auto">
+  
+                      <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Nombre</label>
+                              <input type="name" class="form-control" placeholder="Rosa María">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Apellido</label>
+                              <input type="secondname" class="form-control" placeholder="Martinez">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputAddress">Email</label>
+                            <input type="email" class="form-control" id="inputAddress" placeholder="mirtha.legrand.ok@hotmail.com.ar" disabled>
+                          </div>
+                          <div class="form-group">
+                              <label for="inputAddress">Nickname</label>
+                              <input type="nickname" class="form-control" id="inputAddress" placeholder="lachiqui" disabled>
+                            </div>
+                          <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label>Contraseña</label>
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label>Repetir contraseña</label>
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                              </div>
+                          </div>
+
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label>Sitio web</label>
+                              <input type="web" class="form-control" placeholder="http://turismorocha.gub.uy/">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>Descripción</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hola! me llamo Washington y soy el encargado del portal de turismo del departamento de Rocha - Uruguay " required></textarea>
+                            </div>
+                        </div> 
+          
+                          <div class="form-row mb-3">
+                            <label>Fecha de nacimimiento</label>
+                            <div class="input-group date dateChooser">
+                              <span class="input-group-addon mr-2" style="margin:auto; color:rgb(220, 53, 69)"><i class="fa fa-calendar-minus-o" type="date" style="cursor: pointer;"></i></span><input type="text" placeholder="23/2/1927" class="form-control" required>
+                            </div>
+                          </div>
+                          
+                          <div class="form-row">
+                            <figure class="image-container" id="imgContainerImgChooser">
+                              <input type="file" id="upload-button" accept="image/*">
+                              <label class="border" for="upload-button" id="imgChooserLabel">
+                                <i class="fa fa-upload" style="color:rgb(220, 53, 69)"></i>
+                                Elige una foto
+                              </label>
+                              <img id="chosen-image">
+                            </figure>        
+                          </div>
+          
+                          <button type="submit" class="btn btn-danger mt-3">Guardar</button>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+  
+  <footer id="sticky-footer" class="py-4 bg-light text-black-50 border">
+      <div class="container text-center">
+        <small>Copyright &copy; turismo.Uy</small>
+      </div>
+  </footer>
+  
+  <script src="resources/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="resources/js/popper.min.js"></script>
+  <script src="resources/js/bootstrap.min.js"></script> 
+  <script src="resources/js/bootstrap-datepicker.min.js"></script>
+  <script src="resources/js/bootstrap-datepicker.es.min.js"></script>
+
+  <script>
+    $('.open-btn').on('click', function(){
+        if ($('.sidebar').hasClass('active'))
+            $('.sidebar').removeClass('active');
+        else
+            $('.sidebar').addClass('active');
+    })
+  </script>
+
+  <script src="resources/js/dateChooser.js"></script>
+  <script src="resources/js/imgChooser.js"></script>
+
+</body>
+</html>

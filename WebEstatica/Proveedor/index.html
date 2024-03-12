@@ -1,0 +1,235 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>turismoUy</title>
+
+  <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+
+  <script src="resources/js/font-awesome.js"></script>
+
+
+  <link rel="stylesheet" href="resources/css/menuIzq.css">
+  <link rel="stylesheet" href="resources/css/imgChooser.css">
+  <link rel="stylesheet" href="resources/css/bootstrap-datepicker.css">
+
+</head>
+
+<body>
+
+  <nav id="header" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <button class="btn px-1 py-0 open-btn"> <i class="fa fa-bars"></i></button>
+    <a class="navbar-brand ml-5" href="index.html">
+      <span class="" style="font-size: 25px; color: rgb(136, 31, 48);"><i class="fa fa-plane"></i></span>
+      turismo.<b>Uy</b>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-user-o"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-auto">
+        <form class="form-inline my-4 my-lg-0 ml-auto mr-auto text">
+            <input class="form-control mr-sm-2 mr-2" type="search" id="searchBar" placeholder="Buscar actividades, usuarios, etc" aria-label="Search" style="width: 25rem">
+            <a class="nav-link" href="#">
+                <span class="" style="color: rgb(136, 31, 48);"><i class="fa fa-search"></i></span>
+            </a>
+        </form>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown mr-auto ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Herramientas
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="listadoUsuarios.html">Consultar usuarios</a>
+              <a class="dropdown-item" href="listadoPaquetes.html">Consultar paquetes de actividades</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="altaActividad.html">Alta de actividad turística</a>
+              <a class="dropdown-item" href="altaSalida.html">Alta de salida turística</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown mr-auto ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="resources/img/washington.jpeg" class="card-img" style="max-height: 40px; max-width: 40px;">
+            Washington Rocha
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="consultaUsuarioProv.html">Mi perfil</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="inicioSesion.html">Cerrar sesión</a>
+          </div>
+        </li>   
+      </ul>
+      
+    </div>
+  </nav>
+
+  <div style="height: 65px;"></div>
+  <div class="container-fluid"  style="min-height: 1000px;">
+    <div class="row">
+      <div class="sidebar border-right h-100 overflow-auto" id="side_nav"> 
+        <h5 class="ml-3"><i class="fa fa-paper-plane-o mr-2 mt-3" style="color: rgb(220, 53, 69)"></i>Categorias</h5>
+        <ul class="list-unstyled pl-5 pt-3">
+            <li class=""><a href="listadoActividadesCategoria.html" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Gastronomía</a></li>
+        </ul>
+        <hr class="h-color mx-2">
+        
+        <h5 class="ml-3"><i class="fa fa-map-o mr-2" style="color: rgb(220, 53, 69)"></i>Departamentos</h5>
+        <ul class="list-unstyled  pl-5 pt-3 pb-4">
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Artigas</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Salto</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Canelones</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Maldonado</a></li>
+            <li class=""><a href="listadoActividadesDepartamento.html" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Rocha</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Treinta y Tres</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Cerro Largo</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Rivera</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Paysandú</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Río Negro</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Soriano</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Colonia</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">San José</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Salto</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Flores</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Florida</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Lavalleja</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Durazno</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Tacuarembó</a></li>
+            <li class=""><a href="" class="text-decoration-none d-block" style="color: rgb(220, 53, 69)">Montevideo</a></li>
+            <div style="height: 30px;"></div>
+        </ul>
+      </div>
+
+        <div class="col py-4"> 
+          <div class="row border-bottom mb-3" style="max-width: 80rem">
+            <div class="col">
+              <h2>Destacados</h2>
+            </div>
+          </div>
+          <div class="row flex-column flex-md-row">
+            <div class="col py-4 px-4">
+              <div class="row g-3">
+    
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card my-2">
+                    <img src="resources/img/nueva york.jpeg" class="card-img-left" style="max-height: 300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nueva York</h5>
+                        <p class="card-text">Nueva York incluye 5 distritos que se ubican donde el río Hudson desemboca en el océano Atlántico. ​</p>
+                        <a href="#" class="btn btn-outline-secondary my-2 my-sm-0">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card my-2">
+                    <img src="resources/img/degusta.jpeg" class="card-img-left" style="max-height: 300px">
+                    <div class="card-body">
+                      <h5 class="card-title">Degusta</h5>
+                      <p class="card-text">Festival gastronómico de productos locales en Rocha.</p>
+                      <a href="consultaActividad.html" class="btn btn-outline-secondary my-2 my-sm-0">Leer más</a>
+                    </div>
+                  </div>
+                </div>  
+    
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card my-2">
+                    <img src="resources/img/termas.jpeg" class="card-img-left" style="max-height: 300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Las termas</h5>
+                        <p class="card-text">Estas aguas proceden de capas subterráneas de la Tierra que se encuentran a mayor temperatura, las cuales son ricas en diferentes componentes minerales </p>
+                        <a href="#" class="btn btn-outline-secondary my-2 my-sm-0">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card my-2">
+                    <img src="resources/img/teatroConSabores.jpeg" class="card-img-left" style="max-height: 300px">
+                    <div class="card-body">
+                      <h5 class="card-title">Teatro con Sabores</h5>
+                      <p class="card-text">En el mes aniversario del Club Deportivo Unión de Rocha te invitamos a una merienda deliciosa.</p>
+                      <a href="#" class="btn btn-outline-secondary my-2 my-sm-0">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card my-2">
+                    <img src="resources/img/arequita.jpeg" class="card-img-left" style="max-height: 300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Cerro arquita</h5>
+                        <p class="card-text">El Cerro Arequita, es un cerro ubicado en Uruguay, en el departamento de Lavalleja, 12 km al norte de la ciudad de Minas.El nombre Arequita proviene del vocablo guaraní araicuahita, que significa agua de las altas piedras de las cuevas</p>
+                        <a href="#" class="btn btn-outline-secondary my-2 my-sm-0">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card my-2">
+                    <img src="resources/img/cerroSanAntonio.jpeg" class="card-img-left" style="max-height: 300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Cerro San Antonio</h5>
+                        <p class="card-text">El Cerro San Antonio, también llamado Cerro del Inglés, se encuentra en Piriápolis (Departamento de Maldonado, Uruguay). Tiene una altura de 130 Msnm1​</p>
+                        <a href="#" class="btn btn-outline-secondary my-2 my-sm-0">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card my-2">
+                    <img src="resources/img/bariloche.jpeg" class="card-img-left" style="max-height: 300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Bariloche</h5>
+                        <p class="card-text">San Carlos de Bariloche, conocido simplemente como Bariloche,1​ es una localidad patagónica que, con 146.000 habitantes (2022), es la más poblada de la provincia de Río Negro, siendo además la cabecera del departamento de Bariloche. Bariloche es el destino más visitado de la Patagonia y uno de los destinos más visitados de la Argentina.​</p>
+                        <a href="#" class="btn btn-outline-secondary my-2 my-sm-0">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card my-2">
+                    <img src="resources/img/florianopolis.jpeg" class="card-img-left" style="max-height: 300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Florianópolis</h5>
+                        <p class="card-text">Florianópolis, la capital del estado de Santa Catarina en el sur de Brasil, está compuesta principalmente por la isla de Santa Catarina, de 54 km de longitud. Es famosa por sus playas, incluidas las zonas de balnearios populares como Praia dos Ingleses en la punta norte de la isla. ​​</p>
+                        <a href="#" class="btn btn-outline-secondary my-2 my-sm-0">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>       
+      </div>
+    </div>
+  </div>
+  
+  <footer id="sticky-footer" class="py-4 bg-light text-black-50 border">
+      <div class="container text-center">
+        <small>Copyright &copy; turismo.Uy</small>
+      </div>
+  </footer>
+  
+  <script src="resources/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="resources/js/popper.min.js"></script>
+  <script src="resources/js/bootstrap.min.js"></script>
+
+  <script>
+    $('.open-btn').on('click', function(){
+        if ($('.sidebar').hasClass('active'))
+            $('.sidebar').removeClass('active');
+        else
+            $('.sidebar').addClass('active');
+    })
+  </script>
+
+</body>
+</html>

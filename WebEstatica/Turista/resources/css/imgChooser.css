@@ -1,0 +1,24 @@
+#imgContainerImgChooser{
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+
+#chosen-image{
+    display: block;
+    position: relative;
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+#imgChooserLabel{
+    display: block;
+    text-align: center;
+    padding: 18px 0;
+    cursor: pointer;
+}
+
